@@ -50,14 +50,6 @@ jobs:
               ref: 'refs/tags/${{ steps.date.outputs.date }}.${{ github.run_number }}',
               sha: context.sha
             })
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v3
-        with:
-          name: ${{ steps.date.outputs.date }}.${{ github.run_number }}
-          files: |
-            data/calendars/*.ics
-            events.db
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
