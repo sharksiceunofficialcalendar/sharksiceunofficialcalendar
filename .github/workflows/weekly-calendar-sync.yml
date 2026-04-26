@@ -2,8 +2,8 @@ name: Weekly Calendar Sync
 
 on:
   schedule:
-    # Runs every Monday at 9:30 AM UTC (adjust to your timezone as needed)
-    - cron: '30 9 * * 1'
+    # Runs every Monday at 6:30 AM PST
+    - cron: '0 13 * * 1'
   # Allow manual trigger for testing
   workflow_dispatch:
 
