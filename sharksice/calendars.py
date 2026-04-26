@@ -85,7 +85,7 @@ async def generate_and_save_calendars():
         
         for calendar in calendars:
             try:
-                _calendar = ics.Calendar(creator="Sharks Ice Unofficial Calendar")
+                _calendar = ics.Calendar(creator="Sharks Ice Unofficial Calendar", calendar_name=calendar['name'])
                 partition_keys = calendar.get("keys", [])
                 
                 logger.info(f"Generating calendar for {calendar['name']} with keys: {partition_keys}")
