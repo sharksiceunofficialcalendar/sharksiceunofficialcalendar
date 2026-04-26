@@ -222,5 +222,4 @@ __azurite_db*__.json
 
 queries.txt
 raw_events.json
-data/
-events.db
+data/*.ics

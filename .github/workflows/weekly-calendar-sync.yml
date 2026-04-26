@@ -29,7 +29,18 @@ jobs:
 
       - name: Get current date
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+        run: echo "name=date::$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Create tag
+        uses: actions/github-script@v9
+        with:
+          script: |
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: 'refs/tags/${{ steps.date.outputs.date }}.${{ github.run_number }}',
+              sha: context.sha
+            })
 
       - name: Create Release
         uses: softprops/action-gh-release@v3
