@@ -34,7 +34,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v3
         with:
-          name: ${{ steps.date.outputs.date }}
+          name: ${{ steps.date.outputs.date }}.${{ github.run_number }}
           files: |
             data/calendars/*.ics
             events.sqlite
