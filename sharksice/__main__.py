@@ -1,5 +1,5 @@
 import asyncio
-import os
+import sys
 import logging
 
 from .calendars import generate_and_save_calendars
@@ -20,12 +20,12 @@ async def main():
     success = await fetch_and_store_events()
     logger.info(f"result of fetch_and_store_events {success}")
     if not success:
-        os.exit(1)
+        sys.exit(1)
     logger.info("Start generate_and_save_calendars")
     success = await generate_and_save_calendars()
     logger.info(f"result of generate_and_save_calendars {success}")
     if not success:
-        os.exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

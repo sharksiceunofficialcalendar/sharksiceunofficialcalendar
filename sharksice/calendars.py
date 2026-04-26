@@ -79,7 +79,7 @@ async def generate_and_save_calendars():
             return False
         
         # Create calendars directory if it doesn't exist
-        CALENDARS_DIR.mkdir(exist_ok=True)
+        CALENDARS_DIR.mkdir(parents=True, exist_ok=True)
         
         calendars = json.loads(calendars_file.read_text())
         
