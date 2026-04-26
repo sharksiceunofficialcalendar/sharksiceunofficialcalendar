@@ -1,0 +1,25 @@
+[
+    {
+        "keys": [
+            "GretzkyHour:OIC-GretzkyHourAdmission:OaklandIceCenterOperatedbySharksIce",
+            "GretzkyHour:SJ-GretzkyHourAdmission:SharksIceatSanJose",
+            "Hockey:SJ-Drop-inHockey:SharksIceatSanJose",
+            "Hockey:OIC-Drop-inHockey:OaklandIceCenterOperatedbySharksIce"
+        ],
+        "name": "AllHockey"
+    },
+    {
+        "keys": [
+            "GretzkyHour:OIC-GretzkyHourAdmission:OaklandIceCenterOperatedbySharksIce",
+            "Hockey:OIC-Drop-inHockey:OaklandIceCenterOperatedbySharksIce"
+        ],
+        "name": "AllOaklandHockey"
+    },
+    {
+        "keys": [
+            "GretzkyHour:SJ-GretzkyHourAdmission:SharksIceatSanJose",
+            "Hockey:SJ-Drop-inHockey:SharksIceatSanJose"
+        ],
+        "name": "AllSanJoseHockey"
+    }
+]
