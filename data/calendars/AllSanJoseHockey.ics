@@ -2,165 +2,12 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:Sharks Ice Unofficial Calendar
 BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260430T150000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260430T133000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:a0090db5-8759-4c12-87af-9b092cab595c@a009.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260501T063000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260501T050000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:7df63433-5629-4905-86a4-548919cb39b8@7df6.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
 DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
-DTEND:20260428T203000Z
+DTEND:20260429T203000Z
 LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T190000Z
+DTSTART:20260429T190000Z
 SUMMARY:SJ - Drop-in Hockey
-UID:5d72b6c5-d854-4dd5-b86e-656cb42123c4@5d72.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
-DTEND:20260430T203000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260430T190000Z
-SUMMARY:SJ - Drop-in Hockey
-UID:1d87f7ac-6c07-462b-81ba-8c58e125b293@1d87.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260429T150000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260429T133000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:02ecb6b2-760d-4c80-9f6a-07247b7d5e96@02ec.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260426T170000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260426T153000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:da1acee8-d28c-4964-a972-76a96cdea547@da1a.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T231500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T214500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:5ddcb030-ad85-4bd5-b964-663b5eddc3c0@5ddc.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260429T010000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T233000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:7d0b10ef-44d3-4b4c-82a7-dfcbeffc85fd@7d0b.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T184500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T171500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:6735d2ed-151a-4bfc-976a-567e47032bde@6735.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T150000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T133000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:2dbef5b0-9f8b-4c8a-bc69-e597f831989b@2dbe.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260429T064500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260429T051500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:30b467bf-da9a-4a38-b55f-10216be45a6e@30b4.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T060000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T043000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:3a91fe07-d26f-4542-9d09-a28923ad57c6@3a91.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
-DTEND:20260427T203000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260427T190000Z
-SUMMARY:SJ - Drop-in Hockey
-UID:fe1bd266-3e23-44d5-b236-6d5d09fd3ad6@fe1b.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260430T063000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260430T050000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:a5d1d324-752f-4422-afce-9643410795cf@a5d1.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260427T000000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260426T223000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:17953fe9-2bed-46f0-bc96-9347d4d6faee@1795.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T014500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260428T001500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:0d3b6cd4-8b5c-4d04-88dc-73b037209555@0d3b.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260430T184500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260430T171500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:f8cc3807-4e53-4747-b0b3-e807172ab926@f8cc.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260426T150000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260426T133000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:efbb21b3-924d-4552-aa32-df0a2eb38379@efbb.org
+UID:3e96ccad-c34e-42c8-a689-ca03706e36cd@3e96.org
 URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
 END:VEVENT
 BEGIN:VEVENT
@@ -169,7 +16,7 @@ DTEND:20260430T033000Z
 LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
 DTSTART:20260430T020000Z
 SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:820f2f37-dc77-4d24-8245-fdbe54815e03@820f.org
+UID:a38bb36d-b6c6-46ae-ad64-2b7c7a8f2c2b@a38b.org
 URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
 END:VEVENT
 BEGIN:VEVENT
@@ -178,52 +25,7 @@ DTEND:20260426T204500Z
 LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
 DTSTART:20260426T191500Z
 SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:6e4d71b2-a2b6-41e5-9f9a-00fe4045acb7@6e4d.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260429T234500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260429T221500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:01114417-a639-4d81-9594-8b777781f334@0111.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260428T000000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260427T223000Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:c9fee800-1319-4f36-8337-c71f3c2c569b@c9fe.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
-DTEND:20260429T203000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260429T190000Z
-SUMMARY:SJ - Drop-in Hockey
-UID:7c5722f1-d04f-4510-ac35-80418db60db4@7c57.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
-DTEND:20260427T030000Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260427T013000Z
-SUMMARY:SJ - Drop-in Hockey
-UID:d13aa0e9-74ed-4acf-9de5-ef371ff84fb2@d13a.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
-DTEND:20260426T224500Z
-LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
-DTSTART:20260426T211500Z
-SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:f77a6059-40ec-4de6-a134-9a9aff27c419@f77a.org
+UID:231f545f-80b9-4d2a-913c-421b778946c3@231f.org
 URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
 END:VEVENT
 BEGIN:VEVENT
@@ -232,7 +34,205 @@ DTEND:20260427T150000Z
 LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
 DTSTART:20260427T133000Z
 SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:2960f1dd-538e-4206-83be-b28e7a04ba5b@2960.org
+UID:979e24fd-5f63-4073-98b9-98afe4bbef84@979e.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260430T184500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260430T171500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:d8fed883-0053-4828-8c17-63f28caea874@d8fe.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260427T000000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260426T223000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:20ce59e4-a24b-4497-9a40-d2b70bb5ffb4@20ce.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260430T063000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260430T050000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:672898d6-1b74-4513-93cf-17ed681d266e@6728.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
+DTEND:20260427T203000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260427T190000Z
+SUMMARY:SJ - Drop-in Hockey
+UID:1709e096-6b7c-408e-8c1c-5a844d2c408a@1709.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T231500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T214500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:1e412047-2b56-4909-a0cd-2298426c4635@1e41.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260426T170000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260426T153000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:7b2c236d-536b-4067-9e5b-55f0c09213c1@7b2c.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260429T234500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260429T221500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:c8a8e7a1-c38f-4329-bd35-ee8d826966af@c8a8.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260426T150000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260426T133000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:24208e3f-0641-42e9-8dd2-db2713cbcc10@2420.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260429T010000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T233000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:2638afa8-4ac2-4ec3-8054-fd39ea39374c@2638.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260501T063000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260501T050000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:f6d58571-a16a-46c2-a46f-f457a3a9daef@f6d5.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260426T224500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260426T211500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:5d2ad22b-57ae-4926-99c3-c33c993fde44@5d2a.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
+DTEND:20260428T203000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T190000Z
+SUMMARY:SJ - Drop-in Hockey
+UID:8616556d-d349-4bbe-ad6d-0a7db9a4ce11@8616.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
+DTEND:20260430T203000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260430T190000Z
+SUMMARY:SJ - Drop-in Hockey
+UID:19d32f72-7039-4190-afc3-52b337943184@19d3.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260429T064500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260429T051500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:5d871fd7-90db-4fdf-ad03-ee6cf2846159@5d87.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T150000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T133000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:00e47436-1d09-49b9-bfdf-3bed2d9ee216@00e4.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260429T150000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260429T133000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:06b14389-788d-4fba-9d1b-320c4fa4927f@06b1.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T000000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260427T223000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:2aa08586-59ca-4bd9-afb2-4bb26bcd3747@2aa0.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260430T150000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260430T133000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:3ac96ad8-8fb6-4d02-9a93-2d1053e19cd8@3ac9.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:Drop In Hockey.Registration must be done online.\nFull Gear Required\nPucks are not provided.
+DTEND:20260427T030000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260427T013000Z
+SUMMARY:SJ - Drop-in Hockey
+UID:e6c2a88b-2219-4148-b168-fbf1809278b8@e6c2.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T184500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T171500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:d23d47c9-ee75-4561-b759-4c68fe12a65b@d23d.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T060000Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T043000Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:a07c1d5a-1d09-437b-90ba-2d5066df3903@a07c.org
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:This Stick  Puck hour is designed for players to just skate and work on any aspect of hockey he or she desires. And most importantly to have fun! Each player is required to sign in before each session at front desk to recieve wristband/sticker. Full USA Hockey Certified equipment required.Locker Rooms are Coed\, please plan accordingly. Scrimmages or small area games are not allowed! Advanced registration is requiredLimit 40 skaters and 4 goalies. All Gretzky Hours after 9pm will only be available for online registration. No in person registration.No Refunds.
+DTEND:20260428T014500Z
+LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
+DTSTART:20260428T001500Z
+SUMMARY:SJ - Gretzky Hour Admission (25-26)
+UID:67b267c6-db3e-40db-a2f7-11b2a0dc63a2@67b2.org
 URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
 END:VEVENT
 BEGIN:VEVENT
@@ -241,7 +241,7 @@ DTEND:20260429T184500Z
 LOCATION:1500 South Tenth Street\, San Jose\, CA 95112
 DTSTART:20260429T171500Z
 SUMMARY:SJ - Gretzky Hour Admission (25-26)
-UID:164e2376-521e-462e-b778-91cce99b2537@164e.org
+UID:efe030af-4223-4f0b-a397-3418152076b2@efe0.org
 URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
 END:VEVENT
 END:VCALENDAR
