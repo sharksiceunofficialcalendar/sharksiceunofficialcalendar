@@ -59,9 +59,9 @@ Example:
 3. **Generate Calendars**: Run `python -m sharksice` to generate the new calendar file
 4. **Use Your Calendar**: Import the generated `.ics` file into your calendar app
 
-## Upcoming Features
+## Example
 
-- **Google Calendar Integration** - Calendars will be synced to a Google Calendar stream for easy subscription
+![example](./img/example_calendar.png)
 
 ## Project Structure
 
