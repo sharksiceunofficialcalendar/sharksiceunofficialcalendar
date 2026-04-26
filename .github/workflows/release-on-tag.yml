@@ -1,13 +1,10 @@
 name: Create Release on Tag
 
 on:
-  push:
-    tags:
-      - '*'
   workflow_dispatch:
     inputs:
-      tag:
-        description: 'Tag to create release for'
+      release-name:
+        description: 'Release name'
         required: true
         type: string
 
