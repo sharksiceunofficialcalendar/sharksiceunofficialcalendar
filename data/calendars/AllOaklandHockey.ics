@@ -1,166 +1,239 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:Sharks Ice Unofficial Calendar
+PRODID:-//Sharks Ice Unofficial Calendar//EN
+DESCRIPTION:All hockey events at Oakland Ice Center
+X-WR-CALDESC:All hockey events at Oakland Ice Center
+NAME:AllOaklandHockey
+X-WR-CALNAME:AllOaklandHockey
+X-WR-TIMEZONE:America/Los_Angeles
 BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260501T161500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260501T144500Z
 SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:34874b2e-59a0-425d-ba01-5cd42ff10fa7@3487.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front Desk No Refunds or Credits
-DTEND:20260501T143000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260501T130000Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:a7c2a12a-3ce5-41c0-a050-2280b6cc586d@a7c2.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260502T233000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260502T220000Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:08265bcd-b14c-40dd-be56-487af32ec7fd@0826.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260503T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260503T191500Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:b42a02e2-0e36-4678-95e2-acaca555f8c0@b42a.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session Players and Goalies must pay the full fee per session. No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260428T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260428T191500Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:b11f9692-6612-4680-bd29-fb905a247b83@b11f.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front Desk No Refunds or Credits
-DTEND:20260501T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260501T191500Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:8e54fde9-c800-42e6-9d60-5bb26c7c160b@8e54.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds or Credits
-DTEND:20260427T143000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260427T130000Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:458ddc33-acf9-4141-a88d-cd55bb028ecd@458d.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session Players and Goalies must pay the full fee per session. No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260427T161500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260427T144500Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:a02d401c-d9ae-4e25-9d16-fc6844f9a281@a02d.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260501T190000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260501T173000Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:1b3c7170-085c-47ec-873a-71566f4ede9d@1b3c.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds or Credits
-DTEND:20260429T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260429T191500Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:70b8a961-4921-4e9a-92fd-b1ac49e26f0a@70b8.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260502T021500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260502T004500Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:a5974171-ffec-4569-af8a-595db0cebd6f@a597.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front Desk No Refunds or Credits
-DTEND:20260502T040000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260502T023000Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:31c2b5d5-e810-4f75-b3fd-ef9d0e4e715c@31c2.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session Players and Goalies must pay the full fee per session. No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260427T190000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260427T173000Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:caea7c71-f6a8-45b8-a15d-1216402c2eec@caea.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds or Credits
-DTEND:20260429T143000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260429T130000Z
-SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:449d361b-d68d-45e7-b8a0-188fe8393424@449d.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session Players and Goalies must pay the full fee per session. No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260429T190000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260429T173000Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:7f01fe33-a050-4ea6-8f6c-dfae141abb9f@7f01.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260503T040000Z
-LOCATION:519 18th St\, Oakland\, CA 94612
 DTSTART:20260503T023000Z
-SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:62e05f12-1531-4251-8ac7-11f96fc33754@62e0.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+DTEND:20260503T040000Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Players Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds or Credits
-DTEND:20260427T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260427T191500Z
 SUMMARY:OIC - Drop-in Hockey 25-26 
-UID:d54e147b-6d90-4173-8f40-3194a98646e9@d54e.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+DTSTART:20260429T191500Z
+DTEND:20260429T204500Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds
+  or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is required to check in at the front desk before each session and must wear their sticker receipt visible on their pants.Full USA Hockey Certified equipment is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session Players and Goalies must pay the full fee per session. No outside or private coaches are allowed on the ice at any time. - Unless approved through management.
-DTEND:20260430T204500Z
-LOCATION:519 18th St\, Oakland\, CA 94612
-DTSTART:20260430T191500Z
 SUMMARY:OIC - Gretzky Hour Admission 25-26 
-UID:6cb8b6b6-4805-451a-8ba6-7de97277b93d@6cb8.org
-URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration
+DTSTART:20260427T173000Z
+DTEND:20260427T190000Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session 
+ Players and Goalies must pay the full fee per session. No outside or priva
+ te coaches are allowed on the ice at any time. - Unless approved through m
+ anagement.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260429T130000Z
+DTEND:20260429T143000Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds
+  or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260502T023000Z
+DTEND:20260502T040000Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front Desk No Refund
+ s or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260429T173000Z
+DTEND:20260429T190000Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session 
+ Players and Goalies must pay the full fee per session. No outside or priva
+ te coaches are allowed on the ice at any time. - Unless approved through m
+ anagement.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260501T130000Z
+DTEND:20260501T143000Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front Desk No Refund
+ s or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260503T191500Z
+DTEND:20260503T204500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260502T004500Z
+DTEND:20260502T021500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260502T220000Z
+DTEND:20260502T233000Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260427T144500Z
+DTEND:20260427T161500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session 
+ Players and Goalies must pay the full fee per session. No outside or priva
+ te coaches are allowed on the ice at any time. - Unless approved through m
+ anagement.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260428T191500Z
+DTEND:20260428T204500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session 
+ Players and Goalies must pay the full fee per session. No outside or priva
+ te coaches are allowed on the ice at any time. - Unless approved through m
+ anagement.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260427T191500Z
+DTEND:20260427T204500Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds
+  or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260430T191500Z
+DTEND:20260430T204500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.Program Fee: $21 per session 
+ Players and Goalies must pay the full fee per session. No outside or priva
+ te coaches are allowed on the ice at any time. - Unless approved through m
+ anagement.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260427T130000Z
+DTEND:20260427T143000Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front DeskNo Refunds
+  or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Drop-in Hockey 25-26 
+DTSTART:20260501T191500Z
+DTEND:20260501T204500Z
+DESCRIPTION:Drop-In HockeyAdult Drop-In Hockey Sessions are ages 18+All Pl
+ ayers Must Wear Full GearAll Players Must Check In At Front Desk No Refund
+ s or Credits
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260501T144500Z
+DTEND:20260501T161500Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:OIC - Gretzky Hour Admission 25-26 
+DTSTART:20260501T173000Z
+DTEND:20260501T190000Z
+DESCRIPTION:OIC - Gretzky HourFull Hockey Gear RequiredEach player is requ
+ ired to check in at the front desk before each session and must wear their
+  sticker receipt visible on their pants.Full USA Hockey Certified equipmen
+ t is required.Limit 40 skaters and 4 goalies.No outside or private coaches
+  are allowed on the ice at any time. - Unless approved through management.
+LOCATION:519 18th St\, Oakland\, CA 94612
+URL:https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-regis
+ tration
 END:VEVENT
 END:VCALENDAR
