@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-"""
-Standalone script to fetch events from the API and store them in SQLite.
-"""
-
 import logging
 import re
 import asyncio

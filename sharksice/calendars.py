@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-"""
-Standalone script to generate calendar files from stored events in SQLite.
-"""
-
 import logging
 import asyncio
 import sqlite3
@@ -85,7 +80,7 @@ async def generate_and_save_calendars():
         
         for calendar in calendars:
             try:
-                _calendar = ics.Calendar(creator="Sharks Ice Unofficial Calendar", calendar_name=calendar['name'])
+                _calendar = ics.Calendar(creator="Sharks Ice Unofficial Calendar", name=calendar['name'])
                 partition_keys = calendar.get("keys", [])
                 
                 logger.info(f"Generating calendar for {calendar['name']} with keys: {partition_keys}")
