@@ -29,6 +29,9 @@ jobs:
       - name: Fetch events and generate calendars
         run: python -m sharksice
 
+      - name: Export events to json
+        run: python sharksice/export_events.py
+
       - name: Commit and push generated files
         run: |
           git config user.name "github-actions[bot]"

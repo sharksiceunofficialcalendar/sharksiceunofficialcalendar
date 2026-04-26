@@ -6,8 +6,9 @@ import pathlib
 from dataclasses import dataclass
 from typing import Set
 
-import ics
-from ics.types import ArrowLike
+from datetime import datetime
+from dateutil import parser as dateutil_parser
+from icalendar import Calendar, Event as IcalendarEvent
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,23 +25,23 @@ CALENDARS_DIR = pathlib.Path(__file__).parent.parent / "data" / "calendars"
 
 
 @dataclass(frozen=True)
-class Event:
+class CalendarEvent:
     name: str
-    begin: ArrowLike
-    end: ArrowLike
+    begin: datetime
+    end: datetime
     description: str
     location: str
     url: str
 
-    def to_ics_event(self) -> ics.Event:
-        return ics.Event(
-            name=self.name,
-            begin=self.begin,
-            end=self.end,
-            description=self.description,
-            url=self.url,
-            location=self.location
-        )
+    def to_icalendar_event(self) -> IcalendarEvent:
+        event = IcalendarEvent()
+        event.add('summary', self.name)
+        event.add('dtstart', self.begin)
+        event.add('dtend', self.end)
+        event.add('description', self.description)
+        event.add('location', self.location)
+        event.add('url', self.url)
+        return event
 
 
 def get_events_by_partition(partition_keys: list) -> list:
@@ -80,12 +81,18 @@ async def generate_and_save_calendars():
         
         for calendar in calendars:
             try:
-                _calendar = ics.Calendar(creator="Sharks Ice Unofficial Calendar", name=calendar['name'])
+                _calendar = Calendar()
+                _calendar.calendar_name = calendar['name']
+                _calendar.description = calendar.get('description', '')
+                _calendar.add('prodid', '-//Sharks Ice Unofficial Calendar//EN')
+                _calendar.add('version', '2.0')
+                #_calendar.add('X-WR-CALNAME', calendar['name'])
+                _calendar.add('X-WR-TIMEZONE', 'America/Los_Angeles')
                 partition_keys = calendar.get("keys", [])
                 
                 logger.info(f"Generating calendar for {calendar['name']} with keys: {partition_keys}")
                 
-                events: Set[Event] = set()
+                events: Set[CalendarEvent] = set()
                 
                 # Query events from SQLite
                 rows = get_events_by_partition(partition_keys)
@@ -93,20 +100,30 @@ async def generate_and_save_calendars():
                 
                 for row in rows:
                     logger.info(f"Adding event {row.get('product_name')} on {row.get('start_date')}")
-                    events.add(Event(
+                    start_date = row.get("start_date")
+                    end_date = row.get("end_date")
+                    
+                    # Parse date strings to datetime objects
+                    if isinstance(start_date, str):
+                        start_date = dateutil_parser.parse(start_date)
+                    if isinstance(end_date, str):
+                        end_date = dateutil_parser.parse(end_date)
+                    
+                    events.add(CalendarEvent(
                         name=row.get("product_name", ""),
-                        begin=row.get("start_date"),
-                        end=row.get("end_date"),
+                        begin=start_date,
+                        end=end_date,
                         description=row.get("description", ""),
                         location=row.get("address", ""),
                         url="https://apps.daysmartrecreation.com/dash/x/#/online/sharks/event-registration"
                     ))
                 
-                _calendar.events = [event.to_ics_event() for event in events]
+                for event in events:
+                    _calendar.add_component(event.to_icalendar_event())
                 
                 # Save calendar to file
                 calendar_path = CALENDARS_DIR / f"{calendar['name']}.ics"
-                calendar_path.write_text(_calendar.serialize())
+                calendar_path.write_bytes(_calendar.to_ical())
                 
                 logger.info(f"Successfully saved calendar for {calendar['name']} with {len(events)} events to {calendar_path}")
             

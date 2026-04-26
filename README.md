@@ -23,6 +23,31 @@ Currently, the project generates three ice hockey-focused calendars:
 
 Each calendar is available as an `.ics` file in the `data/calendars/` directory.
 
+### Creating Custom Calendars
+
+You can create your own custom calendars by adding entries to `configs/calendars.json`:
+
+1. **Find Event Types**: Visit the [Events Database Viewer](events.html) to browse all available events and find the `partition_key` values you're interested in
+2. **Edit calendars.json**: Add a new calendar entry with:
+   - `name`: Your calendar name (used for the .ics filename)
+   - `description`: A description of what's in the calendar
+   - `keys`: An array of `partition_key` values to include in this calendar
+
+Example:
+```json
+{
+    "keys": [
+        "Hockey:OIC-Drop-inHockey:OaklandIceCenterOperatedbySharksIce",
+        "Performance/Strength:SJ-StrengthClass:SharksIceatSanJose"
+    ],
+    "name": "CustomHockeyAndStrength",
+    "description": "Oakland drop-in hockey combined with San Jose strength training"
+}
+```
+
+3. **Generate Calendars**: Run `python -m sharksice` to generate the new calendar file
+4. **Use Your Calendar**: Import the generated `.ics` file into your calendar app
+
 ## Upcoming Features
 
 - **Google Calendar Integration** - Calendars will be synced to a Google Calendar stream for easy subscription

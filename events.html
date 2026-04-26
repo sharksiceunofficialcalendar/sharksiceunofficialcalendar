@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Viewer - Sharks Ice Unofficial Calendar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .search-section {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .search-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        .search-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .search-controls input,
+        .search-controls select {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 0.95em;
+            font-family: inherit;
+        }
+
+        .search-controls input:focus,
+        .search-controls select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.95em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #e9ecef;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #dee2e6;
+        }
+
+        .results-info {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        .results-info strong {
+            color: #333;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        thead {
+            background: #f8f9fa;
+            border-bottom: 2px solid #667eea;
+            position: sticky;
+            top: 0;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+            cursor: pointer;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        th:hover {
+            background: #e9ecef;
+        }
+
+        th::after {
+            content: ' ↕';
+            opacity: 0.5;
+            font-size: 0.8em;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .facility-tag {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .facility-tag.oakland {
+            background: #ff6b6b;
+        }
+
+        .facility-tag.sanjose {
+            background: #4ecdc4;
+        }
+
+        .status-open {
+            color: #51cf66;
+            font-weight: 600;
+        }
+
+        .status-closed {
+            color: #ff6b6b;
+            font-weight: 600;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .empty-state p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .custom-calendar-help {
+            background: #f0f7ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+
+        .custom-calendar-help h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .custom-calendar-help p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .custom-calendar-help strong {
+            color: #333;
+        }
+
+        .copy-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            cursor: pointer;
+            border: none;
+            font-weight: 500;
+            transition: background 0.3s;
+        }
+
+        .copy-btn:hover {
+            background: #764ba2;
+        }
+
+        .event-type-cell {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.85em;
+            background: #f8f9fa;
+            padding: 6px !important;
+            border-radius: 3px;
+            word-break: break-all;
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            padding: 20px 30px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 1024px) {
+            .search-controls {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            .search-controls {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+
+            th::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">← Back to Calendar</a>
+            <h1>Events Database</h1>
+            <p>Search and browse all Sharks Ice events</p>
+        </div>
+
+        <div class="content">
+            <div class="search-section">
+                <h2>Search Events</h2>
+                <div class="search-controls">
+                    <input type="text" id="searchInput" placeholder="Search by name, description, facility...">
+                    <select id="facilityFilter">
+                        <option value="">All Facilities</option>
+                        <option value="Oakland">Oakland Ice Center</option>
+                        <option value="San Jose">Sharks Ice San Jose</option>
+                    </select>
+                    <select id="programFilter">
+                        <option value="">All Programs</option>
+                        <option value="Drop-In Hockey">Drop-In Hockey</option>
+                        <option value="Gretsky Hour">Gretsky Hour</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <button class="btn btn-primary" onclick="filterEvents()">Search</button>
+                    <button class="btn btn-secondary" onclick="clearFilters()">Clear</button>
+                </div>
+            </div>
+
+            <div id="resultsInfo" class="results-info"></div>
+
+            <div class="custom-calendar-help">
+                <h3>💡 Create a Custom Calendar</h3>
+                <p>Want to create your own calendar with selected events? Use the <strong>Event Type</strong> values shown in the table:</p>
+                <ol style="margin-left: 20px; color: #555; line-height: 1.6;">
+                    <li>Find events you want to include in your calendar</li>
+                    <li>Copy the <strong>Event Type</strong> (partition_key) - click the copy icon to easily copy it</li>
+                    <li>Edit <code style="background: white; padding: 2px 4px; border-radius: 3px;">configs/calendars.json</code> and add a new entry with your event types</li>
+                    <li>Run <code style="background: white; padding: 2px 4px; border-radius: 3px;">python -m sharksice</code> to generate your custom calendar</li>
+                </ol>
+                <p style="font-size: 0.9em; margin-top: 10px;"><strong>See the <a href="index.html" style="color: #667eea; text-decoration: none;">home page</a> or README for detailed examples.</strong></p>
+            </div>
+
+            <div id="loadingIndicator" class="loading">
+                <div class="loader"></div>
+                <p>Loading events...</p>
+            </div>
+
+            <div id="tableContainer" class="table-wrapper" style="display: none;">
+                <table id="eventsTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">Date & Time</th>
+                            <th onclick="sortTable(1)">Program</th>
+                            <th onclick="sortTable(2)">Facility</th>
+                            <th onclick="sortTable(3)">Event Type</th>
+                            <th onclick="sortTable(4)">Duration</th>
+                            <th onclick="sortTable(5)">Registered</th>
+                            <th onclick="sortTable(6)">Open Slots</th>
+                            <th onclick="sortTable(7)">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="eventsBody">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <p>No events found matching your search criteria.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>⚠️ <strong>Vibe Coded:</strong> This project is maintained informally and may not always be reliable. Use at your own risk.</p>
+        </div>
+    </div>
+
+    <script>
+        let allEvents = [];
+        let filteredEvents = [];
+        let currentSort = { column: 0, ascending: true };
+
+        // Load events on page load
+        document.addEventListener('DOMContentLoaded', loadEvents);
+
+        async function loadEvents() {
+            try {
+                const response = await fetch('data/events.json');
+                if (!response.ok) throw new Error('Failed to load events');
+                allEvents = await response.json();
+                filteredEvents = [...allEvents];
+                displayEvents(filteredEvents);
+                document.getElementById('loadingIndicator').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading events:', error);
+                document.getElementById('loadingIndicator').innerHTML = 
+                    '<p style="color: #ff6b6b;">Error loading events. Please refresh the page.</p>';
+            }
+        }
+
+        function filterEvents() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const facilityFilter = document.getElementById('facilityFilter').value;
+            const programFilter = document.getElementById('programFilter').value;
+
+            filteredEvents = allEvents.filter(event => {
+                const matchesSearch = !searchTerm || 
+                    (event.product_name && event.product_name.toLowerCase().includes(searchTerm)) ||
+                    (event.description && event.description.toLowerCase().includes(searchTerm)) ||
+                    (event.facility && event.facility.toLowerCase().includes(searchTerm)) ||
+                    (event.address && event.address.toLowerCase().includes(searchTerm));
+
+                const matchesFacility = !facilityFilter || 
+                    (event.facility && event.facility.includes(facilityFilter));
+
+                const matchesProgram = !programFilter || 
+                    (event.program_type && event.program_type.includes(programFilter));
+
+                return matchesSearch && matchesFacility && matchesProgram;
+            });
+
+            currentSort = { column: 0, ascending: true };
+            displayEvents(filteredEvents);
+        }
+
+        function clearFilters() {
+            document.getElementById('searchInput').value = '';
+            document.getElementById('facilityFilter').value = '';
+            document.getElementById('programFilter').value = '';
+            filteredEvents = [...allEvents];
+            currentSort = { column: 0, ascending: true };
+            displayEvents(filteredEvents);
+        }
+
+        function displayEvents(events) {
+            const tbody = document.getElementById('eventsBody');
+            const tableContainer = document.getElementById('tableContainer');
+            const emptyState = document.getElementById('emptyState');
+            const resultsInfo = document.getElementById('resultsInfo');
+
+            tbody.innerHTML = '';
+
+            if (events.length === 0) {
+                tableContainer.style.display = 'none';
+                emptyState.style.display = 'block';
+                resultsInfo.innerHTML = '';
+                return;
+            }
+
+            tableContainer.style.display = 'block';
+            emptyState.style.display = 'none';
+            resultsInfo.innerHTML = `Showing <strong>${events.length}</strong> event(s)`;
+
+            events.forEach(event => {
+                const row = document.createElement('tr');
+                
+                const startDate = new Date(event.start_date_local || event.start_date);
+                const endDate = new Date(event.end_date_local || event.end_date);
+                const formattedStart = formatDateTime(startDate);
+                const formattedEnd = formatTime(endDate);
+                
+                const duration = calculateDuration(startDate, endDate);
+                const facilityClass = event.facility && event.facility.includes('Oakland') ? 'oakland' : 'sanjose';
+                const statusClass = event.is_registration_open ? 'status-open' : 'status-closed';
+                const statusText = event.is_registration_open ? 'Open' : 'Closed';
+
+                row.innerHTML = `
+                    <td>${formattedStart}</td>
+                    <td>${event.program_type || 'N/A'}</td>
+                    <td><span class="facility-tag ${facilityClass}">${event.facility || 'Unknown'}</span></td>
+                    <td class="event-type-cell">
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+                            <span title="${event.partition_key || ''}">${event.partition_key || 'N/A'}</span>
+                            ${event.partition_key ? `<button class="copy-btn" onclick="copyToClipboard('${event.partition_key.replace(/'/g, "\\'")}', this)">Copy</button>` : ''}
+                        </div>
+                    </td>
+                    <td>${formattedEnd}</td>
+                    <td>${event.people_registered || 0}</td>
+                    <td>${event.open_slots || 0}</td>
+                    <td><span class="${statusClass}">${statusText}</span></td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function formatDateTime(date) {
+            const options = { month: 'short', day: 'numeric', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        function formatTime(date) {
+            const options = { hour: '2-digit', minute: '2-digit' };
+            return date.toLocaleTimeString('en-US', options);
+        }
+
+        function calculateDuration(startDate, endDate) {
+            const diffMs = endDate - startDate;
+            const diffMins = Math.round(diffMs / 60000);
+            const hours = Math.floor(diffMins / 60);
+            const mins = diffMins % 60;
+            
+            if (hours > 0) {
+                return mins > 0 ? `${hours}h ${mins}m` : `${hours}h`;
+            }
+            return `${mins}m`;
+        }
+
+        function sortTable(columnIndex) {
+            const headers = ['start_date_local', 'program_type', 'facility', 'partition_key', 'end_date_local', 'people_registered', 'open_slots', 'is_registration_open'];
+            const sortKey = headers[columnIndex];
+
+            if (currentSort.column === columnIndex) {
+                currentSort.ascending = !currentSort.ascending;
+            } else {
+                currentSort.column = columnIndex;
+                currentSort.ascending = true;
+            }
+
+            filteredEvents.sort((a, b) => {
+                let aVal = a[sortKey];
+                let bVal = b[sortKey];
+
+                if (aVal === null || aVal === undefined) aVal = '';
+                if (bVal === null || bVal === undefined) bVal = '';
+
+                if (typeof aVal === 'string') {
+                    aVal = aVal.toLowerCase();
+                    bVal = bVal.toLowerCase();
+                }
+
+                const comparison = aVal < bVal ? -1 : aVal > bVal ? 1 : 0;
+                return currentSort.ascending ? comparison : -comparison;
+            });
+
+            displayEvents(filteredEvents);
+        }
+
+        // Copy to clipboard utility
+        function copyToClipboard(text, button) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = button.textContent;
+                button.textContent = 'Copied!';
+                button.style.background = '#51cf66';
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Could not copy to clipboard');
+            });
+        }
+
+        // Allow Enter key to search
+        document.getElementById('searchInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') filterEvents();
+        });
+    </script>
+</body>
+</html>

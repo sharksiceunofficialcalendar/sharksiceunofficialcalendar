@@ -6,20 +6,23 @@
             "Hockey:SJ-Drop-inHockey:SharksIceatSanJose",
             "Hockey:OIC-Drop-inHockey:OaklandIceCenterOperatedbySharksIce"
         ],
-        "name": "AllHockey"
+        "name": "AllHockey",
+        "description": "All hockey events at both Oakland Ice Center and Sharks Ice at San Jose"
     },
     {
         "keys": [
             "GretzkyHour:OIC-GretzkyHourAdmission:OaklandIceCenterOperatedbySharksIce",
             "Hockey:OIC-Drop-inHockey:OaklandIceCenterOperatedbySharksIce"
         ],
-        "name": "AllOaklandHockey"
+        "name": "AllOaklandHockey",
+        "description": "All hockey events at Oakland Ice Center"
     },
     {
         "keys": [
             "GretzkyHour:SJ-GretzkyHourAdmission:SharksIceatSanJose",
             "Hockey:SJ-Drop-inHockey:SharksIceatSanJose"
         ],
-        "name": "AllSanJoseHockey"
+        "name": "AllSanJoseHockey",
+        "description": "All hockey events at Sharks Ice at San Jose"
     }
 ]

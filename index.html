@@ -180,6 +180,9 @@
 
             <div class="calendars-section">
                 <h2>Available Calendars</h2>
+                <p style="margin-bottom: 25px; color: #666;">
+                    <strong>Want to search events?</strong> Check out our <a href="events.html" style="color: #667eea; text-decoration: none; font-weight: 600;">Events Database Viewer</a> to browse and search all upcoming events.
+                </p>
                 <table>
                     <thead>
                         <tr>
@@ -221,6 +224,19 @@
                         </tr>
                     </tbody>
                 </table>
+
+                <div style="background: #f0f7ff; border-left: 4px solid #667eea; padding: 20px; margin-top: 30px; border-radius: 4px;">
+                    <h3 style="color: #333; margin-bottom: 10px; font-size: 1.1em;">Create Your Own Calendar</h3>
+                    <p style="color: #555; margin-bottom: 15px;">Want a custom calendar with only the events you care about?</p>
+                    <ol style="color: #555; line-height: 1.8;">
+                        <li>Visit the <a href="events.html" style="color: #667eea; font-weight: 600; text-decoration: none;">Events Database Viewer</a> and browse events</li>
+                        <li>Note the <strong>Event Type</strong> (partition_key) values you want to include</li>
+                        <li>Edit <code style="background: #fff; padding: 2px 6px; border-radius: 3px;">configs/calendars.json</code> and add a new calendar entry with those event types</li>
+                        <li>Run <code style="background: #fff; padding: 2px 6px; border-radius: 3px;">python -m sharksice</code> to generate your calendar</li>
+                        <li>Import the new .ics file into your calendar app</li>
+                    </ol>
+                    <p style="color: #555; margin-top: 15px; font-size: 0.9em;"><strong>See the <a href="README.md" style="color: #667eea; font-weight: 600; text-decoration: none;">README</a> for detailed instructions and examples.</strong></p>
+                </div>
             </div>
         </div>
 
