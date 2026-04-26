@@ -428,7 +428,14 @@
 
         async function loadEvents() {
             try {
-                const response = await fetch('data/events.json');
+                // Try relative path first (for local use), then fall back to GitHub raw URL
+                let response = await fetch('data/events.json').catch(() => null);
+                
+                if (!response || !response.ok) {
+                    // Fall back to GitHub raw URL
+                    response = await fetch('https://raw.githubusercontent.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/main/data/events.json');
+                }
+                
                 if (!response.ok) throw new Error('Failed to load events');
                 allEvents = await response.json();
                 filteredEvents = [...allEvents];
@@ -437,7 +444,7 @@
             } catch (error) {
                 console.error('Error loading events:', error);
                 document.getElementById('loadingIndicator').innerHTML = 
-                    '<p style="color: #ff6b6b;">Error loading events. Please refresh the page.</p>';
+                    '<p style="color: #ff6b6b;">Error loading events. Please ensure events.json is in the repository. <a href="https://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar" style="color: #667eea;">Check the repo</a></p>';
             }
         }
 
