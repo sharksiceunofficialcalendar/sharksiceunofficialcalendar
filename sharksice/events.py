@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
 """
 Standalone script to fetch events from the API and store them in SQLite.
-Replaces the Azure Functions timer trigger.
 """
 
-import os
 import logging
 import re
 import asyncio
@@ -13,11 +11,10 @@ import json
 import pathlib
 from datetime import datetime
 from typing import List, Dict, Any
-from collections import defaultdict
 
 import httpx
 
-from utils import get_date_range, format_date_for_api, collect_events
+from .utils import get_date_range, format_date_for_api, collect_events
 
 logging.basicConfig(
     level=logging.INFO,

@@ -1,7 +1,7 @@
 import asyncio
 
-from calendars import generate_and_save_calendars
-from events import fetch_and_store_events
+from .calendars import generate_and_save_calendars
+from .events import fetch_and_store_events
 
 async def main():
     """Main entry point."""
