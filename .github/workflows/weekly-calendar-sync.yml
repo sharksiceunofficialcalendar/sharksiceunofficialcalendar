@@ -45,6 +45,20 @@ jobs:
           git tag ${{ steps.date.outputs.date }}.${{ github.run_number }}
           git push origin ${{ steps.date.outputs.date }}.${{ github.run_number }}
 
+      - name: Trigger release workflow
+        uses: actions/github-script@v9
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'release-on-tag.yml',
+              ref: 'main',
+              inputs: {
+                tag: '${{ steps.date.outputs.date }}.${{ github.run_number }}'
+              }
+            })
+
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
