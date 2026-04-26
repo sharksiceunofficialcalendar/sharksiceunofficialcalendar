@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharks Ice Unofficial Calendar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .problem-section {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+            line-height: 1.6;
+        }
+
+        .problem-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        .problem-section p {
+            color: #555;
+            font-size: 1.05em;
+        }
+
+        .calendars-section h2 {
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 1.4em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        thead {
+            background: #f8f9fa;
+            border-bottom: 2px solid #667eea;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        tbody tr:hover {
+            background: #f8f9fa;
+        }
+
+        .calendar-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .calendar-desc {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.95em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .footer {
+            text-align: center;
+            color: #999;
+            padding: 20px 30px;
+            border-top: 1px solid #e9ecef;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                padding: 20px 15px;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+
+            th, td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/shark.png" alt="Sharks Ice Logo">
+            <h1>Sharks Ice Unofficial Calendar</h1>
+        </div>
+
+        <div class="content">
+            <div class="problem-section">
+                <h2>The Problem</h2>
+                <p>Hockey and Gretsky Hour events at Sharks Ice locations aren't available in most calendar applications. This project provides downloadable calendar files (.ics format) that you can import into your favorite calendar app (Google Calendar, Apple Calendar, Outlook, etc.) to stay updated on all upcoming drop-in hockey and Gretsky Hour sessions.</p>
+            </div>
+
+            <div class="calendars-section">
+                <h2>Available Calendars</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Calendar</th>
+                            <th>Description</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="calendar-name">All Hockey</td>
+                            <td class="calendar-desc">All drop-in hockey and Gretsky Hour sessions from both San Jose and Oakland locations</td>
+                            <td>
+                                <a href="webcal://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllHockey.ics" class="download-btn">Subscribe</a>
+                                <a href="https://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calendar-name">Oakland Hockey</td>
+                            <td class="calendar-desc">Drop-in hockey and Gretsky Hour sessions at Oakland Ice Center</td>
+                            <td>
+                                <a href="webcal://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllOaklandHockey.ics" class="download-btn">Subscribe</a>
+                                <a href="https://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllOaklandHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="calendar-name">San Jose Hockey</td>
+                            <td class="calendar-desc">Drop-in hockey and Gretsky Hour sessions at Sharks Ice San Jose</td>
+                            <td><a href="https://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn">Download</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Unofficial calendar maintained independently. For official Sharks Ice information, visit their website.</p>
+        </div>
+    </div>
+</body>
+</html>
