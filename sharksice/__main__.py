@@ -3,7 +3,7 @@ import sys
 import logging
 
 from .calendars import generate_and_save_calendars
-from .events import fetch_and_store_events
+from .events import fetch_and_store_events, fetch_and_store_events_new_flow
 
 async def main():
     """Main entry point."""
@@ -17,7 +17,7 @@ async def main():
 )
     logger = logging.getLogger(__name__)
     logger.info("Start fetch_and_store_events")
-    success = await fetch_and_store_events()
+    success = await fetch_and_store_events_new_flow()
     logger.info(f"result of fetch_and_store_events {success}")
     if not success:
         sys.exit(1)
