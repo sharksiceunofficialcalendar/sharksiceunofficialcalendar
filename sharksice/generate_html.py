@@ -1,119 +1,162 @@
-<!DOCTYPE html>
+"""Generate index.html from calendars.json configuration."""
+
+import json
+import os
+from pathlib import Path
+
+
+def load_calendars_config(config_path="configs/calendars.json"):
+    """Load calendars configuration from JSON file."""
+    with open(config_path, "r") as f:
+        return json.load(f)
+
+
+def generate_calendar_rows(calendars):
+    """Generate HTML table rows for each calendar."""
+    rows = []
+    for calendar in calendars:
+        name = calendar["name"]
+        description = calendar["description"]
+        
+        # GitHub raw release URLs
+        base_url = f"https://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/{name}.ics"
+        webcal_url = f"webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/{name}.ics"
+        google_calendar_url = f"https://calendar.google.com/calendar/r?cid={webcal_url}"
+        
+        row = f"""                        <tr>
+                            <td class="calendar-name">{name}</td>
+                            <td class="calendar-desc">{description}</td>
+                            <td>
+                                <a href="{webcal_url}" class="download-btn">Subscribe *works with iOS*</a>
+                                <a href="{google_calendar_url}" class="download-btn" style="background: #4CAF50;">Subscribe via Google Calendar</a>
+                                <a href="{base_url}" class="download-btn" style="background: #764ba2;">Download</a>
+                            </td>
+                        </tr>"""
+        rows.append(row)
+    
+    return "\n".join(rows)
+
+
+def generate_index_html(calendars):
+    """Generate the complete index.html content."""
+    table_rows = generate_calendar_rows(calendars)
+    
+    html_content = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharks Ice Unofficial Calendar</title>
     <style>
-        * {
+        * {{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }}
 
-        body {
+        body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 40px 20px;
-        }
+        }}
 
-        .container {
+        .container {{
             max-width: 900px;
             margin: 0 auto;
             background: white;
             border-radius: 10px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
-        }
+        }}
 
-        .header {
+        .header {{
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px 30px;
             text-align: center;
-        }
+        }}
 
-        .header h1 {
+        .header h1 {{
             font-size: 2.5em;
             margin-bottom: 20px;
-        }
+        }}
 
-        .header img {
+        .header img {{
             width: 120px;
             height: 120px;
             margin-bottom: 20px;
             filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
-        }
+        }}
 
-        .content {
+        .content {{
             padding: 40px 30px;
-        }
+        }}
 
-        .problem-section {
+        .problem-section {{
             background: #f8f9fa;
             border-left: 4px solid #667eea;
             padding: 25px;
             margin-bottom: 40px;
             border-radius: 4px;
             line-height: 1.6;
-        }
+        }}
 
-        .problem-section h2 {
+        .problem-section h2 {{
             color: #333;
             margin-bottom: 15px;
             font-size: 1.4em;
-        }
+        }}
 
-        .problem-section p {
+        .problem-section p {{
             color: #555;
             font-size: 1.05em;
-        }
+        }}
 
-        .calendars-section h2 {
+        .calendars-section h2 {{
             color: #333;
             margin-bottom: 25px;
             font-size: 1.4em;
-        }
+        }}
 
-        table {
+        table {{
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 30px;
-        }
+        }}
 
-        thead {
+        thead {{
             background: #f8f9fa;
             border-bottom: 2px solid #667eea;
-        }
+        }}
 
-        th {
+        th {{
             padding: 15px;
             text-align: left;
             font-weight: 600;
             color: #333;
-        }
+        }}
 
-        td {
+        td {{
             padding: 15px;
             border-bottom: 1px solid #e9ecef;
-        }
+        }}
 
-        tbody tr:hover {
+        tbody tr:hover {{
             background: #f8f9fa;
-        }
+        }}
 
-        .calendar-name {
+        .calendar-name {{
             font-weight: 600;
             color: #333;
-        }
+        }}
 
-        .calendar-desc {
+        .calendar-desc {{
             color: #666;
             font-size: 0.95em;
-        }
+        }}
 
-        .download-btn {
+        .download-btn {{
             display: inline-block;
             background: #667eea;
             color: white;
@@ -126,43 +169,43 @@
             border: none;
             cursor: pointer;
             margin-right: 8px;
-        }
+        }}
 
-        .download-btn:last-child {
+        .download-btn:last-child {{
             margin-right: 0;
-        }
+        }}
 
-        .download-btn:hover {
+        .download-btn:hover {{
             background: #764ba2;
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
-        }
+        }}
 
-        .footer {
+        .footer {{
             text-align: center;
             color: #999;
             padding: 20px 30px;
             border-top: 1px solid #e9ecef;
             font-size: 0.9em;
-        }
+        }}
 
-        @media (max-width: 600px) {
-            .header h1 {
+        @media (max-width: 600px) {{
+            .header h1 {{
                 font-size: 1.8em;
-            }
+            }}
 
-            .content {
+            .content {{
                 padding: 20px 15px;
-            }
+            }}
 
-            table {
+            table {{
                 font-size: 0.9em;
-            }
+            }}
 
-            th, td {
+            th, td {{
                 padding: 10px;
-            }
-        }
+            }}
+        }}
     </style>
 </head>
 <body>
@@ -192,33 +235,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td class="calendar-name">AllHockey</td>
-                            <td class="calendar-desc">All hockey events at both Oakland Ice Center and Sharks Ice at San Jose</td>
-                            <td>
-                                <a href="webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllHockey.ics" class="download-btn">Subscribe *works with iOS*</a>
-                                <a href="https://calendar.google.com/calendar/r?cid=webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllHockey.ics" class="download-btn" style="background: #4CAF50;">Subscribe via Google Calendar</a>
-                                <a href="https://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="calendar-name">AllOaklandHockey</td>
-                            <td class="calendar-desc">All hockey events at Oakland Ice Center</td>
-                            <td>
-                                <a href="webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllOaklandHockey.ics" class="download-btn">Subscribe *works with iOS*</a>
-                                <a href="https://calendar.google.com/calendar/r?cid=webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllOaklandHockey.ics" class="download-btn" style="background: #4CAF50;">Subscribe via Google Calendar</a>
-                                <a href="https://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllOaklandHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="calendar-name">AllSanJoseHockey</td>
-                            <td class="calendar-desc">All hockey events at Sharks Ice at San Jose</td>
-                            <td>
-                                <a href="webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn">Subscribe *works with iOS*</a>
-                                <a href="https://calendar.google.com/calendar/r?cid=webcal://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn" style="background: #4CAF50;">Subscribe via Google Calendar</a>
-                                <a href="https://github.com/sharksiceunofficialcalendar/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
-                            </td>
-                        </tr>
+{table_rows}
                     </tbody>
                 </table>
 
@@ -254,4 +271,30 @@
         </div>
     </div>
 </body>
-</html>
+</html>"""
+    
+    return html_content
+
+
+def main():
+    """Load config and generate index.html."""
+    # Determine the root directory (parent of sharksice directory)
+    root_dir = Path(__file__).parent.parent
+    
+    # Load calendars configuration
+    config_path = root_dir / "configs" / "calendars.json"
+    calendars = load_calendars_config(str(config_path))
+    
+    # Generate HTML
+    html_content = generate_index_html(calendars)
+    
+    # Write to index.html
+    output_path = root_dir / "index.html"
+    with open(output_path, "w") as f:
+        f.write(html_content)
+    
+    print(f"✓ Generated {output_path}")
+
+
+if __name__ == "__main__":
+    main()

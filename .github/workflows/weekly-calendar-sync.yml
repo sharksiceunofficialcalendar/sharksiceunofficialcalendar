@@ -32,6 +32,9 @@ jobs:
       - name: Export events to json
         run: python sharksice/export_events.py
 
+      - name: Generate HTML
+        run: python sharksice/generate_html.py
+
       - name: Commit and push generated files
         run: |
           git config user.name "github-actions[bot]"

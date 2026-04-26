@@ -23,6 +23,17 @@ Currently, the project generates three ice hockey-focused calendars:
 
 Each calendar is available as an `.ics` file in the `data/calendars/` directory.
 
+### Subscribing on Mobile Devices
+
+Due to limitations with mobile browsers, the recommended way to subscribe to calendars on Android and iOS is through a desktop browser:
+
+1. **Open calendar.google.com on your desktop or laptop** (not your phone)
+2. **Click the + next to "Other calendars"** and select **"From URL"**
+3. **Paste the calendar URL** (copy from the website) and click **"Add calendar"**
+4. **The calendar will automatically sync** to your Google Calendar app on your phone
+
+The calendar will then appear in the Google Calendar mobile app after it syncs (usually within a few minutes).
+
 ### Creating Custom Calendars
 
 You can create your own custom calendars by adding entries to `configs/calendars.json`:
