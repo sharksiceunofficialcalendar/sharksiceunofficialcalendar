@@ -125,6 +125,11 @@
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
+            margin-right: 8px;
+        }
+
+        .download-btn:last-child {
+            margin-right: 0;
         }
 
         .download-btn:hover {
@@ -170,7 +175,7 @@
         <div class="content">
             <div class="problem-section">
                 <h2>The Problem</h2>
-                <p>Hockey and Gretsky Hour events at Sharks Ice locations aren't available in most calendar applications. This project provides downloadable calendar files (.ics format) that you can import into your favorite calendar app (Google Calendar, Apple Calendar, Outlook, etc.) to stay updated on all upcoming drop-in hockey and Gretsky Hour sessions.</p>
+                <p>Sharks Ice facilities use DASH by DaySmart as their scheduling system. DaySmart does not offer any type of official calendar export or calendar application. This project provides downloadable calendar files (.ics format) that you can import into your favorite calendar app (Google Calendar, Apple Calendar, Outlook, etc.) to stay updated on all events.</p>
             </div>
 
             <div class="calendars-section">
@@ -203,7 +208,10 @@
                         <tr>
                             <td class="calendar-name">San Jose Hockey</td>
                             <td class="calendar-desc">Drop-in hockey and Gretsky Hour sessions at Sharks Ice San Jose</td>
-                            <td><a href="https://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn">Download</a></td>
+                            <td>
+                                <a href="webcal://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn">Subscribe</a>
+                                <a href="https://github.com/beneshed/sharksiceunofficialcalendar/releases/latest/download/AllSanJoseHockey.ics" class="download-btn" style="background: #764ba2;">Download</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -211,7 +219,8 @@
         </div>
 
         <div class="footer">
-            <p>Unofficial calendar maintained independently. For official Sharks Ice information, visit their website.</p>
+            <p>⚠️ <strong>Vibe Coded:</strong> This project is maintained informally and may not always be reliable. Use at your own risk.</p>
+            <p style="margin-top: 10px; font-size: 0.85em;">Unofficial calendar maintained independently. For official Sharks Ice information, visit their website.</p>
         </div>
     </div>
 </body>

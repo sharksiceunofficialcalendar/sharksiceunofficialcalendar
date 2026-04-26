@@ -48,6 +48,10 @@ sharksiceunofficialcalendar/
 1. Clone the repository
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the scraper: `python -m sharksice`
+
+## Disclaimer
+
+⚠️ **Vibe Coded with GitHub Copilot** - This project was developed informally and may not always be reliable. It's maintained on a best-effort basis. Use at your own risk!
 4. Import the generated `.ics` files from `data/calendars/` into your calendar app
 
 ## Contributing
