@@ -10,6 +10,7 @@ on:
 jobs:
   sync-calendars:
     runs-on: ubuntu-latest
+    permissions: write-all
 
     steps:
       - name: Checkout code
@@ -27,9 +28,17 @@ jobs:
       - name: Fetch events and generate calendars
         run: python -m sharksice
 
+      - name: Commit and push generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/calendars/*.ics events.sqlite
+          git commit -m "chore: sync calendar events for $(date +'%Y-%m-%d')" || exit 0
+          git push
+
       - name: Get current date
         id: date
-        run: echo "name=date::$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
       - name: Create tag
         uses: actions/github-script@v9
@@ -48,9 +57,7 @@ jobs:
           name: ${{ steps.date.outputs.date }}.${{ github.run_number }}
           files: |
             data/calendars/*.ics
-            events.sqlite
-    # create tag and release in tag
-
+            events.db
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
