@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/calendars/*.ics events.db data/events.json
+          git add data/calendars/*.ics events.db data/events.json index.html
           git commit -m "chore: sync calendar events for $(date +'%Y-%m-%d')" || exit 0
           git push
 
@@ -58,7 +58,6 @@ jobs:
           files: |
             data/calendars/*.ics
             events.db
-
 #      - name: Trigger release workflow
 #        uses: actions/github-script@v9
 #        with:
